@@ -21,7 +21,7 @@
 }
 .work {
 	width: 100%;
-	height: 50vh;
+	height: 70vh;
 	background-color: #242424;
 	text-align: center;
 	color: white;
@@ -29,15 +29,18 @@
 
 .project {
 	width: 50%;
-	height: 45vh;
 	display: inline-block;
 	text-align: center;
+	height: 65vh;
+	background-size: cover;
 }
 
-.project-dijkstra {
-	height: 100%;
+#project-dijkstra {
 	background-image: url("arrow-graph.jpg");
-	background-size: cover;
+}
+
+#project-graphing-cal {
+	background-image: url("black-and-white-chart.jpg");
 }
 
 .contact {
@@ -51,4 +54,22 @@
 a {
 	color: aliceblue;
 	text-decoration: none;
+}
+
+.side-menu {
+	background-color: #242424;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.menu-direction {
+	text-align: center;
+    padding: 14px 16px;
+	display: inline;
+	float: left;
+	
+}
+
+.menu-bar {
+	border-radius: 25px;
 }
