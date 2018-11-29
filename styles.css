@@ -9,6 +9,8 @@
 	height: 90vh;
 	background-image: url("welcome-image.jpg");
 	background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 }
 
 .intro-text {
@@ -33,6 +35,8 @@
 	text-align: center;
 	height: 65vh;
 	background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
 }
 
 #project-dijkstra {
