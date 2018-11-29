@@ -21,13 +21,34 @@
 }
 .work {
 	width: 100%;
+	height: 50vh;
+	background-color: #242424;
+	text-align: center;
+	color: white;
 }
 
 .project {
 	width: 50%;
+	height: 45vh;
 	display: inline-block;
+	text-align: center;
+}
+
+.project-dijkstra {
+	height: 100%;
+	background-image: url("arrow-graph.jpg");
+	background-size: cover;
 }
 
 .contact {
 	display: block;
+	height: 50vh;
+	background-color: #242424;
+	text-align: center;
+	color: white;
+}
+
+a {
+	color: aliceblue;
+	text-decoration: none;
 }
