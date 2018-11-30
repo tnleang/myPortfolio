@@ -5,13 +5,15 @@
 	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
+	<!-- Intro section -->
+	<!-- Need to fix on the style welcome font and link of menu bar-->
 	<section class= "intro">
 		<section class = "menu-bar">
 		<ul class="side-menu">
 			<li class="menu-direction"><a href="">Home</a></li>
 			<li class="menu-direction"><a href="">Projects</a></li>
-			<li class="menu-direction"><a href="">Contact</a></li>
 			<li class="menu-direction"><a href="">About</a></li>
+			<li class="menu-direction"><a href="">Contact Me</a></li>
 		</ul>
 		</section>
 		<section class="intro-text">
@@ -19,25 +21,29 @@
 			<p>I am a computer science major student at Cal Poly Pomona</p>
 		</section>
 	</section>
+
+	<!-- The Projects Sestion -->
 	<section class="work">
-		<h1>Projects</h1>
 		<section class="project" id="project-dijkstra">
 			<a target="_blank" href="https://github.com/tnleang/airphaneDijkstraShortestPath"><h3>Airplane Route</h3>
 			<p>Simulate with the raw airline data to find the shortest path between airports by using Dijkstra algorithm in c++ and QtGUI</p></a>
 		</section><section class="project" id="project-graphing-cal">
-			<h3>Graphing Calculator</h3>
-			<a target="_blank" href="https://github.com/tnleang/graphingCalculator">View this work</a>
+			<a class="project-graphing-cal-link" target="_blank" href="https://github.com/tnleang/graphingCalculator">Graphing Calculator</a>
 		</section>
 	</section>
+
+	<!-- Profile Sestion -->
+	<!-- need fix on the style for the contact form -->
+	<!-- might add the profile next to it too -->
 	<section class="contact">
-		<h2>Contact</h2>
+		<h2 class="contact-description">Contact Me</h2>
 		<!-- Use formspree.io for this part -->
-		<form action="https://formspree.io/yourname@cpp.edu"
+		<form class="contact-form" action="https://formspree.io/nuntapramote@cpp.edu"
 		      method="POST">
-		    <input type="text" name="name" placeholder="Name">
-		    <input type="email" name="_replyto" placeholder="Email Address">
-		    <textarea type="text" cols="30" rows="6" name="message" placeholder="Message"></textarea>
-		    <input type="submit" value="send message">
+		    <input class="contact-form-name" type="text" name="name" placeholder="Name">
+		    <input class="contact-form-email" type="email" name="_replyto" placeholder="Email Address">
+		    <textarea class="contact-form-messege" type="text" cols="30" rows="6" name="message" placeholder="Message"></textarea>
+		    <input class="contact-form-submit" type="submit" value="send message">
 		</form>
 	</section>
 </body>
