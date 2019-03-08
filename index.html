@@ -7,23 +7,24 @@
 <body>
 	<!-- Intro section -->
 	<!-- Need to fix on the style welcome font and link of menu bar-->
-	<section class= "intro">
+	<section class= "intro" id='home'>
 		<section class = "menu-bar">
 		<ul class="side-menu">
-			<li class="menu-direction"><a href="">Home</a></li>
-			<li class="menu-direction"><a href="">Projects</a></li>
-			<li class="menu-direction"><a href="">About</a></li>
-			<li class="menu-direction"><a href="">Contact Me</a></li>
+			<li class="menu-direction"><a href="#home">Home</a></li>
+			<li class="menu-direction"><a href="#project">Projects</a></li>
+			<li class="menu-direction"><a href="#profile">About</a></li>
+			<li class="menu-direction"><a href="#contact">Contact Me</a></li>
 		</ul>
 		</section>
 		<section class="intro-text">
-			<h2>Titichot</h2>
-			<p>I am a computer science major student at Cal Poly Pomona</p>
+				<section class='welcome-text'>
+				<p>Think twice, code once.</p>
+			</section>
 		</section>
 	</section>
 
 	<!-- The Projects Section -->
-	<section class="work">
+	<section class="work" id='projects'>
 		<section class="project" id="project-dijkstra">
 			<a target="_blank" href="https://github.com/tnleang/airphaneDijkstraShortestPath">Airplane Route</a>
 		</section><section class="project" id="project-graphing-cal">
@@ -32,13 +33,25 @@
 	</section>
 
 	<!-- Profile Scstion -->
-	<section class="profile">
-
-	</section>
+	<section class="profile" id ='profile'>
+		<img src='profile-pic.JPG' alt='profile' class='profile-image'>
+			<section>
+					<p class='profile-text'>		
+						I am currently an undergraduate student majoring in computer science at Cal Poly Pomona. 
+					</p>
+					<p class='profile-text'>
+							I like solving any CS related problems. I also like hiking, swimming and many other outdoor activities.
+					</p>		
+					<p class='profile-text'>
+						Find me on <a class="info-socialLink" href="https://github.com/tnleang" target="_blank">GitHub</a>
+						or <a class="info-socialLink" href="https://www.facebook.com/leang.nuntapramote" target="_blank">Facebook</a>
+						</p>
+				</section>
+			</section>
 	<!-- Contact Scstion -->
 	<!-- need fix on the style for the contact form -->
 	<!-- might add the profile next to it too -->
-	<section class="contact">
+	<section class="contact" id='contact'>
 		<h2 class="contact-description">Contact Me</h2>
 		<!-- Use formspree.io for this part -->
 		<form class="contact-form" action="https://formspree.io/nuntapramote@cpp.edu"
@@ -46,7 +59,7 @@
 		    <input class="contact-form-name" type="text" name="name" placeholder="Name">
 		    <input class="contact-form-email" type="email" name="_replyto" placeholder="Email Address">
 		    <textarea class="contact-form-messege" type="text" cols="30" rows="6" name="message" placeholder="Message"></textarea>
-		    <input class="contact-form-submit" type="submit" value="send message">
+		    <input class="contact-form-submit" type="submit" value="SEND">
 		</form>
 	</section>
 </body>
