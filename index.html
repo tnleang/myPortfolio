@@ -3,12 +3,13 @@
 <head>
 	<title>Nuntapramote Titichot</title>
 	<link href="styles.css" rel="stylesheet">
+	<script src="action.js"></script>
 </head>
 <body>
 	<!-- Intro section -->
 	<!-- Need to fix on the style welcome font and link of menu bar-->
 	<section class= "intro" id='home'>
-		<section class = "menu-bar">
+		<section id = "menu-bar">
 		<ul class="side-menu">
 			<li class="menu-direction"><a href="#home">Home</a></li>
 			<li class="menu-direction"><a href="#project">Projects</a></li>
@@ -26,7 +27,7 @@
 	<!-- The Projects Section -->
 	<section class="projects">
 		<section class="otus-site-project">
-			<img src="otus-site.png" alt="otus-site" class="otus-photo">
+
 		</section>
 		<section class="otus-site-text">
 			<h2>Otus Thai Kitchen and Coffee Website</h2>
@@ -36,13 +37,15 @@
 
 	<!-- Profile Scstion -->
 	<section class="profile" id ='profile'>
-		<img src='profile-pic.JPG' alt='profile' class='profile-image'>
-			<section>
+		<section class="profile-img-sec">
+			<img src='profile-pic.JPG' alt='profile' class='profile-image'>
+		</section>
+			<section class="profile-sec">
 					<p class='profile-text'>
 						I am currently an undergraduate student majoring in computer science at Cal Poly Pomona.
 					</p>
 					<p class='profile-text'>
-							I like solving any CS related problems. I also like hiking, swimming and many other outdoor activities.
+							I like to solve any interesting problems. I also like hiking, swimming and many other outdoor activities.
 					</p>
 					<p class='profile-text'>
 						Find me on <a class="info-socialLink" href="https://github.com/tnleang" target="_blank">GitHub</a>
@@ -65,18 +68,6 @@
 		</form>
 	</section>
 
-	<script>
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-	var currentScrollPos = window.pageYOffset;
-	  if (prevScrollpos > currentScrollPos) {
-	    document.getElementById("menu-bar").style.top = "0";
-	  } else {
-	    document.getElementById("menu-bar").style.top = "-50px";
-	  }
-	  prevScrollpos = currentScrollPos;
-	}
-	</script>
 
 
 

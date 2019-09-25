@@ -56,8 +56,10 @@ a {
 	text-decoration: none;
 }
 
-.menu-bar {
-	position: sticky;
+#menu-bar {
+	display: block;
+	position: fixed;
+	width: 100%;
 	background-color: #242424;
 	opacity: 0.9;
 	transition: top 0.3s;
@@ -67,6 +69,7 @@ a {
 	list-style-type: none;
 	overflow: hidden;
 	text-align: center;
+	left: 50%;
 }
 
 .menu-direction {
@@ -150,16 +153,15 @@ a {
 }
 
 .profile-text {
-	padding: 1rem 10%;
+	padding: 0.5rem 10%;
 	color: white;
 	width: 80%;
-	font-size: 4vh;
+	font-size: 2.5vh;
 }
 
 .profile-image {
 	border-radius: 50%;
-	border: 1px solid #fff;
-	width: 20%;
+	width: 15%;
 	height: auto;
 }
 
@@ -182,23 +184,34 @@ a {
 	color: #fff;
 }
 
+.otus-site-project {
+	background-image: url("otus-site.png");
+	background-size: cover;
+}
+
 .otus-text {
 	padding: 10%;
 	width: 80%;
 	height: auto;
 }
 
-@media (min-width: 600px) {
+.otus-site-project:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1000px) {
 	.projects {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.otus-site-project {
-		grid-column: span 2;
+		grid-column: span 1;
+		height: 40vh;
 	}
 
 	.otus-site-text {
-		grid-column: span 2;
+		grid-column: span 1;
+		height: 40vh;
 	}
 }
