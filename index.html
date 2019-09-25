@@ -38,12 +38,12 @@
 	<section class="profile" id ='profile'>
 		<img src='profile-pic.JPG' alt='profile' class='profile-image'>
 			<section>
-					<p class='profile-text'>		
-						I am currently an undergraduate student majoring in computer science at Cal Poly Pomona. 
+					<p class='profile-text'>
+						I am currently an undergraduate student majoring in computer science at Cal Poly Pomona.
 					</p>
 					<p class='profile-text'>
 							I like solving any CS related problems. I also like hiking, swimming and many other outdoor activities.
-					</p>		
+					</p>
 					<p class='profile-text'>
 						Find me on <a class="info-socialLink" href="https://github.com/tnleang" target="_blank">GitHub</a>
 						or <a class="info-socialLink" href="https://www.facebook.com/leang.nuntapramote" target="_blank">Facebook</a>
@@ -64,5 +64,21 @@
 		    <input class="contact-form-submit" type="submit" value="SEND">
 		</form>
 	</section>
+
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	    document.getElementById("menu-bar").style.top = "0";
+	  } else {
+	    document.getElementById("menu-bar").style.top = "-50px";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+	</script>
+
+
+
 </body>
 </html>
