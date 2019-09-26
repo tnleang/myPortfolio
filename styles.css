@@ -214,4 +214,12 @@ a {
 		grid-column: span 1;
 		height: 40vh;
 	}
+
+	.profile-sec {
+		grid-column: span 1;
+	}
+
+	.profile-img-sec {
+		grid-column: span 1;
+	}
 }
